@@ -13,5 +13,5 @@ from Funciones import plotImage
 from Funciones import plotLine
 from Funciones import plotSeveralimages
 
-
-
+def main():
+    
