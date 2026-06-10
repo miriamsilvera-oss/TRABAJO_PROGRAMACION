@@ -1,16 +1,12 @@
-
-
-
-
-
-
-
-
-
-
-
-
 #SUGERENCIA QUE PUSO EL PROFE PARA LA PARTE DE CARGAR IMAGEN
+
+
+
+
+
+
+
+
 """def makeTable(datos:list, separador = " ", columnas_a_int = []):
     datos es una lista que contiene listas de un archivo con estructura
     separador es un string que sirve para separar los datos de cada fila y generar columnas
@@ -27,6 +23,4 @@
 
         tabla.append(datos_fila)
     return tabla
-makeTable(datos,separador = " ,", columnas_a_int=[1,4,5])# datos corrsponde al archivo """
-
-
+makeTable(datos,separador = " ,", columnas_a_int=[1,4,5]) """
