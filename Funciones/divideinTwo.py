@@ -10,4 +10,14 @@ def divideinTwo(imagen):
     columnas = len(imagen[0]) # columnas de la imagen
     # mitad de las columnas de la imagen 
     mitad = columnas// 2
+    #dividir la imagen en partes iguales
+
+    return mitad
+
+# prueba funcion
+
+if __name__ == "__main__":
+    imagen_partida = divideinTwo(imagen)
+    print(imagen_partida)
+
 
