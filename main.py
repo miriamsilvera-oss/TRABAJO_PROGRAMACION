@@ -1,3 +1,5 @@
+
+#andrea
 from Funciones import cargarImagen
 from Funciones import divideinFour
 from Funciones import divideinTwo
@@ -15,4 +17,3 @@ from Funciones import plotSeveralimages
 
 def main():
 
-#andrea

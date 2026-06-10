@@ -7,6 +7,7 @@ imagen = [[28.5, 31.2, 29.8, 32.1],
 def divideinTwo(imagen):
     """Divide la imagen en dos partes iguales a la mitad"""
     #fila y columna de la imagen
-    filas = len(imagen[0]) # filas  de la image
     columnas = len(imagen[0]) # columnas de la imagen
+    # mitad de las columnas de la imagen 
+    mitad = columnas// 2
 
