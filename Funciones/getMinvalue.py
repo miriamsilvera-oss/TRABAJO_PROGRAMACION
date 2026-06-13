@@ -25,6 +25,7 @@ minimo = 0 porque todas la temperaturas mayores al umbral son mayores a 0 por lo
 generamos la variable auxiliar primero para asignar el primer valor que supere el umbral y apartir del primer valor que cumple
 comparamos con las temperaturas siguientes hasta encontrar el minimo"""
 
-
+#Prueba de función 
 if __name__ == "__main__":
     print(getMinvalue(imagen, temperatura_umbral))
+
