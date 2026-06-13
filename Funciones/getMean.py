@@ -21,8 +21,11 @@ def getMean(imagen, temperatura_umbral):
     for fila in imagen:                          # recorremos cada fila
         for temperatura in fila:                 # recorremos cada temperatura
             if temperatura > temperatura_umbral: # solo consideramos las que superan el umbral
-                sumatoria = sumatoria + temperatura  # sumamos la temperatura
-                cantidad = cantidad + 1              # contamos el valor
+                sumatoria += temperatura  # sumamos la temperatura
+                cantidad += 1           # contamos el valor
+    if cantidad == 0:
+        return "No hay temperaturas que superen el umbral. Favor de cambiar el umbral o las temperaturas"
+    
     media = sumatoria / cantidad                 # dividimos la suma por la cantidad
     return media                                 # retornamos la media
 
