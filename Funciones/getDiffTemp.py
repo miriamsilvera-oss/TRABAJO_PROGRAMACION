@@ -20,12 +20,12 @@ def getDiffs(temps1, temps2):
         return 0                                # retornamos 0 como indica el profe
 
     # paso 2: calculamos las diferencias entre cada par de valores
-    diferencias = []                            # lista vacía para guardar las diferencias
+    diferencias_temp = []                            # lista vacía para guardar las diferencias
     for i in range(len(temps1)):                # recorremos cada posición de las listas
         diff = temps1[i] - temps2[i]            # calculamos la diferencia entre los dos valores
-        diferencias.append(diff)                # agregamos la diferencia a la lista
+        diferencias_temp.append(diff)                # agregamos la diferencia a la lista
 
-    return diferencias                          # retornamos la lista de diferencias
+    return diferencias_temp                          # retornamos la lista de diferencias
 
 if __name__ == "__main__":
     # prueba con listas de igual longitud
