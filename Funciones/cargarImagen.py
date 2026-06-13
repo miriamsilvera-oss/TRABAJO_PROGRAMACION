@@ -25,10 +25,11 @@ def cargarImagen(ruta):
 
 # %%
 #Prueba función
-imagen = cargarImagen("paciente6/Imagen_0.csv") # cargamos la imagen del paciente 6
-print(f"Filas: {len(imagen)}")                   # imprimimos cuántas filas tiene
-print(f"Columnas: {len(imagen[0])}")             # imprimimos cuántas columnas tiene
-print(f"Primer valor: {imagen[0][0]}")           # imprimimos el primer valor
-print(f"Primera fila completa: {imagen[0]}")     # imprimimos toda la primera fila
+if __name__ == "__main__":
+    imagen = cargarImagen("paciente6/Imagen_0.csv") # cargamos la imagen del paciente 6
+    print(f"Filas: {len(imagen)}")                   # imprimimos cuántas filas tiene
+    print(f"Columnas: {len(imagen[0])}")             # imprimimos cuántas columnas tiene
+    print(f"Primer valor: {imagen[0][0]}")           # imprimimos el primer valor
+    print(f"Primera fila completa: {imagen[0]}")     # imprimimos toda la primera fila
 
 #jenni
