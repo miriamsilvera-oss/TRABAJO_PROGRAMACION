@@ -21,7 +21,7 @@ def cargarImagen(paciente, nombreArchivo):
         imagen.append(fila)
     archivo.close()
 
-    return imagen
+    return imagenGG
 
 
 
