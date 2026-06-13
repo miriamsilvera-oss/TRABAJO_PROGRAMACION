@@ -8,8 +8,12 @@ def cargarImagen(ruta):
     Retorna:
         list[list[float]]: Matriz de temperaturas (lista de listas).
     """
-    matriz = []                               # creamos una lista vacía para guardar todas las filas
-    archivo = open(ruta, 'r')                 # abrimos el archivo CSV para leerlo
+    matriz = []  # creamos una lista vacía para guardar todas las filas
+    try:            #por si el archivo que se ingresa no existe 
+        archivo = open(ruta, 'r')  
+    except FileNotFoundError:
+        return "No se encontro con el archivo ingresado. Favor de volver a intentar "
+                   # abrimos el archivo CSV para leerlo
     for linea in archivo:                     # recorremos el archivo línea por línea
         filaTexto = linea.strip().split(',')  # sacamos espacios/saltos de línea y separamos por coma
         filaNumerica = []                     # lista vacía para guardar los números de esta fila
