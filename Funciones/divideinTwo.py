@@ -7,17 +7,18 @@ def divideInTwo(imagen):
     """Divide la imagen en dos mitades iguales a la mitad de las columnas.
     Retorna dos matrices: cuadrante derecho y cuadrante izquierdo."""
     mitad = len(imagen[0]) // 2       # calculamos la mitad de las columnas
-    derecha = []                       # lista vacía para el cuadrante derecho
-    izquierda = []                     # lista vacía para el cuadrante izquierdo
+    mitad_derecha = []                       # lista vacía para el cuadrante derecho
+    mitad_izquierda = []                     # lista vacía para el cuadrante izquierdo
     for fila in imagen:                # recorremos cada fila de la imagen
-        derecha.append(fila[:mitad])   # tomamos la primera mitad de la fila
-        izquierda.append(fila[mitad:]) # tomamos la segunda mitad de la fila
-    return derecha, izquierda          # retornamos los dos cuadrantes
+        mitad_derecha.append(fila[:mitad])   # tomamos la primera mitad de la fila
+        mitad_izquierda.append(fila[mitad:]) # tomamos la segunda mitad de la fila
+    return mitad_derecha, mitad_izquierda          # retornamos los dos cuadrantes
 
 # prueba función
 if __name__ == "__main__":
     derecha, izquierda = divideInTwo(imagen)  # llamamos la función
-    print("Derecha:", derecha)                # imprimimos cuadrante derecho
-    print("Izquierda:", izquierda)            # imprimimos cuadrante izquierdo
+    print("Izquierda\t\tDerecha")
+    for i in range (len(izquierda)):
+        print(izquierda[i], "\t", derecha[i])          # imprimimos cuadrante izquierdo y derecho
 
 #andrea
