@@ -1,19 +1,19 @@
 
 #andrea
-from Funciones import cargarImagen
-from Funciones import divideinFour
-from Funciones import divideinTwo
-from Funciones import frequencyCounter
-from Funciones import getMinvalue
-from Funciones import getMaxValue
-from Funciones import getDiffTemp
-from Funciones import getMean
-from Funciones import getMedian
-from Funciones import getStd
-from Funciones import getVar
-from Funciones import plotImage
-from Funciones import plotLine
-from Funciones import plotSeveralimages
+from Funciones.cargarImagen import cargarImagen
+from Funciones.divideinFour import divideinFour
+from Funciones.divideinTwo import divideinTwo
+from Funciones.frequencyCounter import frequencyCounter
+from Funciones.getMinvalue import getMinvalue
+from Funciones.getMaxValue import getMaxValue
+from Funciones.getDiffTemp import getDiffTemp
+from Funciones.getMean import getMean
+from Funciones.getMedian import getMedian
+from Funciones.getStd import getStd
+from Funciones.getVar import getVar
+from Funciones.plotImage import plotImage
+from Funciones.plotLine import plotLine
+from Funciones.plotSeveralimages import plotSeveralimages
 
 def main():
 
