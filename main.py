@@ -16,4 +16,9 @@ from Funciones.plotLine import plotLine
 from Funciones.plotSeveralimages import plotSeveralimages
 
 def main():
-
+    umbral = 30
+    imagenes_paciente6 =["Imagen_1000 (4).csv", "Imagen_2000 (4).csv","Imagen_3000 (4).csv","Imagen_4000 (4).csv", "Imagen_5000 (4).csv"]
+    imagenes_paciente7 = ["Imagen_1000 (5).csv", "Imagen_2000 (5).csv","Imagen_3000 (5).csv","Imagen_4000 (5).csv", "Imagen_5000 (5).csv"]
+    imagenes_paciente9 = ["Imagen_1000 (6).csv", "Imagen_2000 (6).csv","Imagen_3000 (6).csv","Imagen_4000 (6).csv", "Imagen_5000 (6).csv"]
+    
+    def analisisImagen(nombre_paciente,lista_imagen,umbral): 
